@@ -1,0 +1,79 @@
+﻿.hierarchy-display {
+    display:inline-block;
+    vertical-align: top;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    overflow-y:auto;
+}
+.hierarchy-display-nav {
+    background-color: #FFFFFF;
+    /**
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    */
+    padding: 0;
+    width: 235px;
+}
+.hierarchy-display-nav > li > a {
+    border: 1px solid #E5E5E5;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 8px;
+}
+
+.hierarchy-display-nav > li:first-child > a {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.hierarchy-display-nav > li:last-child > a {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.hierarchy-display-nav > .active > a {
+    border: 0 none;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1) inset, -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+    padding: 9px 9px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+.hierarchy-display-nav .icon-chevron-right {
+    float: right;
+    margin-right: -6px;
+    margin-top: 2px;
+    opacity: 0.25;
+}
+.hierarchy-display-nav > li > a:hover {
+    background-color: #F5F5F5;
+}
+.hierarchy-display-nav a:hover .icon-chevron-right {
+    opacity: 0.5;
+}
+.hierarchy-display-nav .active .icon-chevron-right, .amp-sidenav .active a:hover .icon-chevron-right {
+    opacity: 1;
+}
+
+.hierarchy-display-affix {
+    position:relative;
+}
+
+.hierarchy-display-nav.affix {
+    top: 40px;
+}
+.hierarchy-display-nav.affix-bottom {
+    bottom: 270px;
+    position: absolute;
+    top: auto;
+}
+
+@media (min-width: 1200px) {
+.hierarchy-display-nav {
+    /*width: 258px;*/
+}
+.hierarchy-display-nav > li > a {
+}
+}
